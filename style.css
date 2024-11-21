@@ -1,0 +1,331 @@
+body {
+    height: max-content;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 100px 0px 150px 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 150;
+    background-image: url(Images/background-patterns-3.png);
+}
+@media (max-width: 600px) {
+    body {
+        background-image: none;
+        background-color: lightgray;
+    }
+}
+@media (max-height: 420px) {
+    body {
+        margin-left: 200px;
+        margin-top: 0px;
+    }
+}
+p {
+    text-align: justify;
+}
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(249, 246, 246);
+    border-bottom: none;
+    box-shadow: 0px 0px 8px 1px lightgray;
+    position: fixed;
+    margin-top: -100px;
+    z-index: 105;
+}
+@media (max-height: 420px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 0px;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        width: max-content;
+        position: fixed;
+        height: 100%;
+    }
+}
+.logo {
+    height: 75%;
+    cursor: pointer;
+    z-index: 150;
+    margin: 10px;
+}
+@media (max-height: 420px) {
+    .logo {
+        height: 50px;
+        margin: 25px 25px 0px 25px;
+    }
+}
+@media (max-height: 420px) {
+    .right-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 670px) {
+    .right-section {
+        display: none;
+    }
+}
+main {
+    width: 50%;
+    background-color: rgb(249, 246, 246);
+    display: grid;
+    padding: 25px;    
+    margin-top: 15px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px 1px lightgray inset;
+    position: absolute;
+}
+@media (max-width:1000px) {
+    main {
+        width: 80%;
+    }
+}
+@media (max-height: 420px) {
+    main {
+        width: 62%;
+    }  
+}
+button {
+    margin: 20px;
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    transition: 5ms;
+}
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: lightgray; 
+}
+button:active {
+    cursor: pointer;
+    color: rgb(31, 31, 31);
+    background-color: rgb(238, 237, 237);
+}
+h1 {
+    font-size: 35px;
+    margin-left: 3px;
+}
+input {
+    width: 50%;
+    padding: 10px 85px 15px 15px;
+    border-radius: 15px;
+    border: none;
+    font-size: 22px;
+    text-justify: center;
+    box-shadow: 0px 2px 12px 1px rgb(231, 228, 228);
+}
+input::selection {
+    border: yellow;
+}
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }    
+}
+.input-text {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.input-mess {
+    width: 50%;
+    padding: 10px 85px 85px 15px;
+    border-radius: 15px;
+    border: none;
+}
+@media (max-width: 600px) {
+    .input-mess {
+        width: 100%;
+    }    
+}
+::placeholder {
+    font-style: italic;
+    font-size: 20px;
+    color: lightgray;
+}
+.sites-logo {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    object-fit: contain;
+}
+.contact-links {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 12px 1px rgb(231, 228, 228);
+    margin: 15px;
+    width: 190px;
+}
+.hyperlink {
+    font-size: 21px;
+}
+.send-button {
+    padding: 15px 20px 15px 20px;
+    margin: 18px 0px 0px 0px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: max-content;
+}
+span {
+    color: red;
+    font-size: 25px;
+}
+.button-header {
+    padding: 12px 15px 12px 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: bold;
+}
+.profile-picture {
+    width: 90%;
+    height: 90%;
+    aspect-ratio: 1/1;
+    margin: 20px 20px 0px 20px;
+    border-radius: 1000px;
+    object-fit: contain;
+
+}
+@media (min-width: 800px) {
+    .profile-picture {
+        width: 50%;
+        border-radius: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}
+input:active {
+    border: black;
+}
+.top-grid {
+    display: flex;
+    flex-direction: row;
+
+    text-align: justify;
+    position: relative;
+}
+@media (max-width: 800px) {
+    .top-grid {
+        display: flex;
+        flex-direction: column;
+    }    
+}
+.write-me {
+    margin-top: 20px;
+}
+.line {
+    border: dashed 2px rgb(235, 230, 230) ;
+    margin-top: 75px;
+}
+.sites {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1300px) {
+    .sites {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.endtitles {
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width: 100px) {
+    .endtitles {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.titles {
+    margin: 17px;
+    font-size: 17px;
+}
+.titles-click {
+    margin: 20px;
+    font-size: 15px;
+}
+.titles-click:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.icons {
+    width: 40px;
+    margin: 15px;
+}
+.icons-grid {
+    display: flex;
+    flex-direction: column;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+}
+.italic {
+    font-style: italic;
+    color: gray;
+}
+.textarea {
+    width: 200px;
+    max-height: 50px;
+}
+.submit-but {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 15px 0px 15px 0px;
+    color: white;
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+.submit-but:hover {
+    color: rgb(255, 253, 253);
+    background-color: rgb(97, 97, 97);
+}
+.submit-but:active {
+    color: black;
+    background-color: lightgray;
+}
+.edge {
+    max-width: fit-content;
+    text-align: justify;
+}
+.counter {
+    margin: 15px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.ending-logo {
+    height: 85px;
+    padding: 10 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.end-logo {
+    height: 100px;
+    margin: 25 0 25 0;
+}
+.bullet-img {
+    height: 25px;
+    margin-right: 10px;
+}
+.space {
+    margin-left: 3px;
+}

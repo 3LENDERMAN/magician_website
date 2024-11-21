@@ -1,0 +1,194 @@
+<html lang="eng">
+  <head>
+    <title>David Dostál</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <a href="#"><img class="logo" src="Images/logo-header.png" /></a>
+      </div>
+      <div class="right-section">
+        <a href="#"><button class="button-header">O mně</button></a>
+        <a href="#kontakt"><button class="button-header">Kontakt</button></a>
+        <a href="#zpráva"><button class="button-header">Zpráva</button></a>
+      </div>
+    </header>
+    <main>
+      <div class="top-section">
+        <h1 class="about-me" id="about">
+          <img class="bullet-img" src="Images/bullet.png" />O mně
+        </h1>
+        <div class="top-grid">
+          <div class="text">
+            <p>
+              Jako vášnivý a zkušený veřejně vystupující kouzelník v České
+              republice se specializuji na vytváření vlastních kouzelnických
+              triků a iluzí na míru vašim konkrétním potřebám. Ať už se jedná o
+              firemní akci, narozeninovou oslavu nebo jinou speciální
+              příležitost, zaručuji vašim hostům vzrušení a úžas.
+            </p>
+            <p>
+              Můj repertoár zahrnuje širokou škálu triků a iluzí, včetně
+              karetních triků, levitace, únikových aktů a představení pro čtení
+              myšlenek. Budu s vámi spolupracovat na vytvoření personalizovaného
+              představení, které odpovídá tématu vaší akce a zájmům vašeho
+              publika.
+            </p>
+          </div>
+          <img class="profile-picture" src="Images/profile-pic.jpg" />
+        </div>
+      </div>
+      <div class="middle-section">
+        <div class="header-contact">
+          <div class="line"></div>
+          <h1 class="find-me">
+            <img class="bullet-img" src="Images/bullet.png" />Kde mě najdete
+          </h1>
+          <p>Chtěli byste mne kontaktovat nebo zhlédnout moji práci?</p>
+          <p class="middle-text">
+            Působím také na několika sociálních sítích, a to především na
+            Instagramu, kde pravidelně přidávám kvalitní videa mých triků a
+            kouzel.
+          </p>
+        </div>
+
+        <div class="sites">
+          <div class="contact-links">
+            <img
+              class="sites-logo"
+              id="kontakt"
+              src="Images/Instagram_logo.svg"
+            />
+            <a href="https://www.instagram.com/dejvdostal/"
+              ><p class="hyperlink">Instagram</p></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="contact">
+        <h1><img class="bullet-img" src="Images/bullet.png" /> Kontakt</h1>
+        <p>
+          Hledáte jedinečný a nezapomenutelný zážitek ze zábavy pro svou příští
+          akci?
+        </p>
+        <p>
+          S více než třináctiletou zkušeností jako vystupující kouzelník jsem
+          pobavil tisíce hostů a získal nadšené recenze.
+        </p>
+        <p>
+          Jsem odhodlán poskytovat špičkovou zábavu a zajistit, aby vaše akce
+          měla obrovský úspěch. Nenechte si ujít příležitost vnést kouzlo do
+          vaší příští akce. Kontaktujte mě ještě dnes a rezervujte si své
+          vystoupení! Těším se, že vaše akce bude opravdu nezapomenutelná.
+        </p>
+        <div class="icons-grid">
+          <div class="icon-box">
+            <img class="icons" src="Images/phone-icon.svg" />
+            <p>
+              Tel.: <a href="tel:+420774677203"><b>+420 774 677 203</b></a>
+            </p>
+          </div>
+          <div class="icon-box">
+            <img class="icons" id="zpráva" src="Images/email-icon.svg" />
+            <p>E-mail:</p>
+            <a
+              href="mailto:Kouzelnikdavid@post.cz?subject=Sem%20napište%20předmět%20zprávy&body=Sem%napište%20Vaši%20zprávu"
+              ><b class="space">Kouzelnikdavid@post.cz</b></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="line"></div>
+      <div class="bottom-section">
+        <div class="input-grid">
+          <h1 class="write-me">
+            <img class="bullet-img" src="Images/bullet.png" />Napište zprávu
+          </h1>
+          <p class="italic">
+            (Do zprávy zapište datum, kdy byste si představovali konání akce,
+            dále pak náročnost akce - jako je počet diváků, rozmanitost triků -
+            triky s kartami, levitace atd., typ představení - svatba, oslava
+            atd., nakonec by stálo za to zmínit časovou náročnost - hodiny, dny
+            atd.)
+          </p>
+          <form
+            action="https://formsubmit.co/Kouzelnikdavid@post.cz"
+            method="POST"
+          >
+            <div class="input-box">
+              <p class="input-text">Zadejte jméno:</p>
+              <input class="input" type="text-box" name="Jméno" />
+            </div>
+            <div class="input-box">
+              <p class="input-text">Zadejte E-mail: <span>*</span></p>
+              <input
+                class="input"
+                type="email"
+                name="E-mailová adresa"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <p class="input-text">Zadejte místo konání: <span>*</span></p>
+              <input class="input" type="text" name="Místo konání" required />
+            </div>
+            <div class="input-box">
+              <p class="input-text">Předmět zprávy:</p>
+              <input
+                class="input"
+                type="text-box"
+                name="Předmět zprávy"
+                required
+              />
+            </div>
+            <div class="input-box">
+              <p class="input-text">Zpráva: <span>*</span></p>
+              <input
+                class="input-mess"
+                type="message"
+                name="Zpráva"
+                placeholder="prostor pro kouzelnická slova"
+                required
+              />
+            </div>
+            <br />
+            <input class="submit-but" type="submit" value="Odeslat" />
+          </form>
+          <br />
+          <div class="line"></div>
+
+          <div class="visitors">
+            <h1>
+              <img class="bullet-img" src="Images/bullet.png" />Počet
+              návštěvníků
+            </h1>
+            <p>Celkový počet zobrazení od vytvoření tohoto webu.</p>
+          </div>
+          <div class="table">
+            <!-- Start of CuterCounter Code -->
+            <a href="https://www.cutercounter.com/" target="_blank"
+              ><img
+                src="https://www.cutercounter.com/hits.php?id=hxncpon&nd=6&style=9"
+                border="0"
+                alt="website counter"
+            /></a>
+            <!-- End of CuterCounter Code -->
+          </div>
+          <div class="line"></div>
+          <div class="endtitles">
+            <p class="titles">© 2023</p>
+            <p class="titles">Všechna práva vyhrazena</p>
+          </div>
+          <div class="ending-logo">
+            <img class="end-logo" src="Images/end-title.png" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
